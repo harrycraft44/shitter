@@ -20,5 +20,12 @@ const server = http.createServer((req, res) => {
     }
 
 });
+//simple get api
+app.get('/api/get', (req, res) => {
+    res.send({
+        message: 'Hello World'
+    });
+} );
 
+app.listen(port);
 server.listen(ports);
